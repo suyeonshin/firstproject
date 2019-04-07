@@ -1,0 +1,8 @@
+<!-- home.html -->
+<h1 style="background-color: orange; color: white;">Wordcount Application</h1>
+<h2 herf="{% url 'about' %}" style="background-color: orange; color: blueviolet;">About</h2>
+<form action="{% url 'result'%}">
+    <textarea cols="40" rows="10" name="fulltext" style="background-color: blueviolet; color: yellow" ></textarea>
+    <br>
+    <input type="submit" value="count!" style="background-color: blueviolet; color:white">
+</form>

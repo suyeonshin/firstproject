@@ -1,0 +1,11 @@
+<h1 style="background-color: red; color: blue;"> Result </h1>
+
+<h3 style="background-color: orange; color: green;"> 당신이 입력한 텍스트는 <a style="background-color: green; color:orange;">{{total}}</a> 단어로 구성되어 있습니다. </h3>
+<h3 style="background-color: yellow; color: blueviolet;"> 입력한 텍스트 </h3>
+<a style="background-color: green; color: orange;">{{ inputtext }}</a>
+<br>
+<h3 style="background-color: blue; color: red;"> 단어 카운트 <h3>
+{% for word, frequency in dictionary %}
+<a style="background-color: blueviolet; color: yellow;">{{word}} - {{frequency}}</a>
+<br>
+{% endfor %}
